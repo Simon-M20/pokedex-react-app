@@ -1,0 +1,37 @@
+.locationContainer {
+    background-color: transparent;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationContainer.active {
+    background-color: rgba(000, 000, 000, 0.5);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+}
+
+.locationContainer article {
+    background-color: #fff;
+    color: #333;
+    height: auto;
+    max-height: 80%;
+    width: 90%;
+    margin: auto;
+    padding: 24px 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.locationContainer article::-webkit-scrollbar {
+    display: none;
+}
