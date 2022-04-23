@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&display=swap");
+
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(34, 34, 34, 0.85);
+    scroll-behavior: smooth;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: #ef5350;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #ff604f;
+    border-radius: 20px;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 400;
+    background-color: #f4f5f4;
+    color: #3d3d38;
+}
