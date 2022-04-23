@@ -1,0 +1,46 @@
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+@supports (backdrop-filter: blur(12px)) {
+    .loader {
+        backdrop-filter: blur(12px);
+        -moz-backdrop-filter: blur(12px);
+    }
+}
+
+@supports not (backdrop-filter: blur(0px)) {
+    .loader {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+/* .rotar {
+    width: 100px;
+    height: auto;
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0.1;
+    z-index: 1;
+  }
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  } */
