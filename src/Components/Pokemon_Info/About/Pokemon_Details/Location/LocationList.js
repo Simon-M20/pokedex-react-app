@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import PokedexContext from "../../../../../Context/GlobalContext";
+// import PokeIcon from "../../../../../Assets/PokeApp-icon.png";
 import PokeIcon from "../../../../../Assets/PokeApp-icon.png";
 
 const LocationList = ({ locationActive, setLocationActive }) => {

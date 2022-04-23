@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { useParams } from "react-router";
 import PokedexContext from "../../Context/GlobalContext";
 import Dots from "../../Assets/dotted.png";
-import { Colors, getPokemonEffectiveness } from "../../Helpers/PokeApi";
+import { Colors } from "../../Helpers/PokeApi";
 import Error404 from "../Ui/Error/Error404";
 import swal from "sweetalert";
 import SinglePokeCard from "./SinglePokeCard";

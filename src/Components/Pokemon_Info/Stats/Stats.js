@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import PokedexContext from "../../../../../Context/GlobalContext";
+import PokedexContext from "../../../Context/GlobalContext";
+// import PokedexContext from "../../../../../Context/GlobalContext";
 
 const Training = () => {
     const { singlePokemon, pokemonAbout } = useContext(PokedexContext);
