@@ -1,0 +1,69 @@
+.dropMenu {
+    background-color: transparent;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    position: fixed;
+}
+
+.dropMenu.active {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+    background-color: rgba(000, 000, 000, 0.5);
+}
+
+.dropMenu section {
+    position: absolute;
+    z-index: 10;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+
+.dropMenu .menuActive {
+    position: absolute;
+    z-index: 10;
+    bottom: 4.5rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.favMenu,
+.genMenu,
+.typeMenu,
+.searchMenu {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 8px 14px 8px 18px;
+    margin: 8px 0;
+    transition: all 0.2s ease-in;
+}
+
+.favMenu:hover,
+.genMenu:hover,
+.typeMenu:hover,
+.searchMenu:hover {
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px,
+        rgba(255, 255, 255, 0.8) 0px 0px 0px 1px;
+
+    transform: scale(0.9);
+}
+
+.favMenu .icon,
+.genMenu .icons,
+.typeMenu .icons,
+.searchMenu .icons {
+    color: #6f76d3;
+    margin-left: 8px;
+}
