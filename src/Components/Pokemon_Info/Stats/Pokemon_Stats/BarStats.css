@@ -1,0 +1,29 @@
+.progressBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 20px;
+    /* margin: 0 auto; */
+    height: 5px;
+    width: 50%;
+    /* max-width: 80%; */
+    background-color: #e0e0de;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    transition: "width 1s ease-in-out";
+    /* width: `${total}%`; */
+    /* backgroundColor: `${color}`, */
+    border-radius: "inherit";
+    text-align: "left";
+    position: "absolute";
+    left: "0";
+}
+
+@media (min-width: 768px) {
+    .progressBar {
+        width: 80%;
+    }
+}
