@@ -1,0 +1,130 @@
+.detailsContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.dotsBg {
+    position: absolute;
+    right: 25px;
+    top: -25px;
+    transform: scale(0.5);
+    opacity: 0.75;
+}
+
+.backBg {
+    position: relative;
+    color: #fff;
+}
+
+.backBg::before {
+    content: "";
+    position: absolute;
+    left: -72px;
+    top: -65px;
+    transform: rotate(-15deg);
+    height: 105px;
+    width: 115px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+    );
+}
+
+.pokemonBg {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 90%;
+    bottom: 0;
+}
+
+.pokemonBg.rotar {
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0.12;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pokeCard {
+    padding: 0 18px;
+}
+
+.pokeDetails {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 32px 24px;
+}
+
+.detailsBtn {
+    /* border: 1px solid lightgray; */
+    padding: 0 0 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+.detailsBtn.active {
+    border-bottom: 2px solid #9691f1;
+    font-weight: 600;
+}
+
+/* .detailsBtn::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    background-color: #9691f1;
+    transition: all 0.3s ease-in;
+  }
+  
+  .detailsBtn:hover::before,
+  .detailsBtn:focus::before {
+    width: 80%;
+  } */
+
+.aboutSection,
+.evolutionSection,
+.movesSection,
+.statsSection {
+    transition-delay: 2s;
+    transition: all 0.6s ease-in;
+    transform: translateX(-150%);
+}
+
+.aboutSection.active,
+.evolutionSection.active,
+.movesSection.active,
+.statsSection.active {
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .pokeCard {
+        padding: 0 28px;
+    }
+}
