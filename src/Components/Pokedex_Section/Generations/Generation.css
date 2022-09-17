@@ -2,6 +2,7 @@
     position: fixed;
     background-color: rgba(000, 000, 000, 0.5);
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -31,6 +32,12 @@
         rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+@media screen and (min-width: 768px) {
+    .generationSection {
+        height: 320px;
+    }
+}
+
 .generationSection::before {
     content: "";
     position: absolute;
@@ -41,9 +48,14 @@
     background-color: #d4d4d4;
 }
 
-.generationSection article::-webkit-scrollbar {
-    display: none;
+@media screen and (min-wdith: 768px) {
+    .generationSection article {
+        padding: 0 20px;
+    }
 }
+/* .generationSection article::-webkit-scrollbar {
+    display: none;
+} */
 
 .generationCard {
     position: relative;

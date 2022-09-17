@@ -124,6 +124,12 @@
 }
 
 @media (min-width: 768px) {
+    .detailsContainer {
+        width: 40%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 0 auto;
+    }
+
     .pokeCard {
         padding: 0 28px;
     }

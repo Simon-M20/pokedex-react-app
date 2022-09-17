@@ -8,15 +8,14 @@ const HomeMenu = () => {
     const { getAllPokemons, setSinglePokemon } = useContext(PokedexContext);
 
     return (
-        <section className='grid grid-cols-2 justify-items-center gap-x-2 md:gap-x-4 gap-y-6 px-3 md:w-1/2 w-full mx-auto md:pt-8 md:pb-16 pt-6 pb-12'>
+        <section className='grid grid-cols-2 justify-items-center gap-x-2 md:gap-x-4 gap-y-6 px-3 md:w-11/12 w-full mx-auto md:pt-8 md:pb-16 pt-6 pb-12'>
             <figure className='cardMenu'>
                 <Link
                     to='Pokedex'
                     onClick={() => {
                         getAllPokemons();
                         setSinglePokemon([]);
-                    }}
-                >
+                    }}>
                     <img className='poke1 poke' src={PokeBall} alt='Pokeball' />
                     <figcaption className='text-lg'>Pokedex</figcaption>
                     <img className='poke2 poke' src={PokeBall} alt='Pokeball' />

@@ -36,12 +36,12 @@ const Breeding = () => {
                     )?.flavor_text
                 }
             </p>
-            <article className='w-11/12 mx-auto my-4 rounded-xl px-6 py-4 flex justify-center items-center shadow-2xl border-gray-100 border'>
-                <div className='w-1/2'>
+            <article className='w-11/12 mx-auto my-4 rounded-xl px-6 py-4 flex justify-center items-center shadow-lg border-gray-100 border'>
+                <div className='w-1/2 text-center'>
                     <h2 className='text-gray-400 pb-0.5 font-medium'>Height</h2>
                     <p>{`${feet}' ${leftPad(Number(inches) % 12, 2)}"`}</p>
                 </div>
-                <div className='w-1/2'>
+                <div className='w-1/2 text-center'>
                     <h2 className='text-gray-400 pb-0.5 font-medium'>Weight</h2>
                     <p>
                         {Math.abs(singlePokemon.weight / 4.536).toFixed(1)} lbs

@@ -79,10 +79,19 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     /* border-radius: 60px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .homeBg {
     background-color: #f5f4f4;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .homeBg {
+        width: 40%;
+    }
 }
 
 .violetBtn {
